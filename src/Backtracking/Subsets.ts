@@ -7,12 +7,8 @@ function subsets(nums: number[]): number[][] {
             return;
         }
         subset.push(nums[i]);
-        console.log(i + "=============================");
-        console.log(subset);
         dfs(i + 1);
         subset.pop();
-        console.log(i + "-----------------------------");
-        console.log(subset);
         dfs(i + 1);
     }
 
